@@ -29,38 +29,69 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
 
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/index/" class="tab-link link active">
-                        <i class="ri-home-5-line"></i>
-                        <span>Home</span>
-                    </a>
-                    <a href="/link2/" class="tab-link link">
-                        <i class="ri-search-eye-line"></i>
-                        <span>Busca</span>
-                    </a>
-                    <a href="/link3/" class="tab-link link">
-                        <i class="ri-heart-3-line"></i>
-                        <span>Favoritos</span>
-                    </a>
-                    <a href="/link4/" class="tab-link link">
-                        <i class="ri-user-3-line"></i>
-                        <span>Usuário</span>
-                    </a>
 
-                </div>
-            </div>
 
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="detalhes" class="page color-theme-blue">
 
+                <!-- TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                        <div class="flex-40 text-align-center">
+                        <span class="riscado color-gray">75.00</span>
+                            <h3 class="price no-padding no-margin">R$ 69.00</h3>
+                        </div>
+                        <div class="flex-60">
+                            <button class="add-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <a href="/index/">
-                        Voltar</a>
+                    <div class="prod-detail">
+                        <div class="buttons-top">
+                            <a href="/index/"><i class="ri-arrow-left-s-line"></i>
+                                <a href="#"><i class="ri-heart-3-line"></i>
+                                    <a href="#"><i class="ri-share-2-fill"></i>
+                        </div>
+                        <img src="img/img-camisas/br-11134201-7r98o-lr6cz1jpliqj57.jpg" alt="">
+                    </div>
+                    <div class="prod-content">
+                        <div class="block">
+                            <div class="line padding-top">
+                                <b class=" margin-left">Camisa PsicoPato</b>
+                                <button class="promo-btn">Promoção<object data="" type=""></object></button>
+                            </div>
+
+                            <div class="marginn-top display-flex align-items-center justify-content-start">
+                                <button class=" margin-left btn-rates"><i class="mdi mdi-star"></i> 4.8</button>
+                                <button class="btn-rates"><i class="ri-thumb-up-fill"></i> 90%</button>
+                                <span class="color-gray">110 reviews</span>
+                            </div>
+
+                            <div class="display-flex align-items-center justify-content-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloremque rerum sunt ad consequatur labore autem perferendis reprehenderit provident nulla sit corrupti enim aut, voluptate tenetur blanditiis expedita. Totam, soluta?</p>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <th>Características</th>
+                                    <th>Detalhes</th>
+                                </tr>
+                                <tr>
+                                    <td>Bonito</td>
+                                    <td>Aqui vai o detalhe mais detalhado</td>
+                                </tr>
+                                <tr>
+                                    <td>Elegante</td>
+                                    <td>Aqui vai o detalhe mais detalhado</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
