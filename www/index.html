@@ -16,6 +16,7 @@
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!-- remix icon -->
@@ -26,10 +27,8 @@
 <body>
     <!-- App root element -->
     <div id="app">
-
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-
             <!-- TAB BAR-->
             <div id="menuPrincipal" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
@@ -49,10 +48,8 @@
                         <i class="ri-user-3-line"></i>
                         <span>Usuário</span>
                     </a>
-
                 </div>
             </div>
-
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page color-theme-blue">
 
@@ -62,8 +59,7 @@
                         <img src="img/logo/Logo.png" alt="">
                         <h1 class="title-logo">Memes<span id="title">&Códigos</span></h1>
                     </div>
-
-                    <a href="#" class="btn-cart" data-count="0">
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
                         <i class="ri-shopping-bag-line"></i>
                     </a>
                 </div>
@@ -146,75 +142,88 @@
                         </div>
                         <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
 
-                            <!-- ITEM CARD-->
+                            <!-- ITEM CARD SKELETON 01-->
                             <div class="item-card">
                                 <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/img-camisas/br-11134201-7r98o-lr6cz1jpliqj57.jpg" alt="">
+                                    <div class="img-container skeleton-effect-wave">
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Camisa PsicoPato</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
+                                        <span style="margin-right: auto; width: 90px;"
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                        <span style="width: 20px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        <span style="width: 30px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
                                     </div>
-                                    <div class="price">R$ 69.00</div>
+                                    <div class="price">
+                                        <span style="margin-top: 5px; height: 20px; width: 60px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- ITEM CARD SKELETON 02-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                    <div class="img-container skeleton-effect-wave">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span style="margin-right: auto; width: 90px;"
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                        <span style="width: 20px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        <span style="width: 30px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                    </div>
+                                    <div class="price">
+                                        <span style="margin-top: 5px; height: 20px; width: 60px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                    </div>
                                 </a>
                             </div>
 
+                            <!-- ITEM CARD SKELETON 03-->
                             <div class="item-card">
                                 <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/img-camisas/camisa-coders-oajxlxwkuo (1).webp" alt="">
+                                    <div class="img-container skeleton-effect-wave">
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Nome do Item</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
+                                        <span style="margin-right: auto; width: 90px;"
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                        <span style="width: 20px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        <span style="width: 30px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
                                     </div>
-                                    <div class="price">R$ 69.00</div>
+                                    <div class="price">
+                                        <span style="margin-top: 5px; height: 20px; width: 60px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                    </div>
                                 </a>
                             </div>
 
+                            <!-- ITEM CARD SKELETON 04-->
                             <div class="item-card">
                                 <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/img-camisas/D_NQ_NP_774616-MLB75214128161_032024-O-camiseta-basica-psicopato-memes-funny-duck-unissex.webp"
-                                            alt="">
+                                    <div class="img-container skeleton-effect-wave">
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Nome do Item</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
+                                        <span style="margin-right: auto; width: 90px;"
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                        <span style="width: 20px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        <span style="width: 30px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
                                     </div>
-                                    <div class="price">R$ 69.00</div>
+                                    <div class="price">
+                                        <span style="margin-top: 5px; height: 20px; width: 60px; margin-right: 15px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                    </div>
                                 </a>
                             </div>
 
-                            <div class="item-card">
-                                <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/img-camisas/teu-07.webp" alt="">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span class="color-gray">Nome do Item</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 69.00</div>
-                                </a>
-                            </div>
 
                         </div>
                         <br><br><br><br><br><br><br>
-
                     </div>
                 </div>
             </div>
