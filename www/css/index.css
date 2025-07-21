@@ -117,7 +117,7 @@ form {
     position: relative;
 }
 
-#search{
+input[type="text"] {
     width: 90%;
     height: 45px;
     border-radius: 10px;
