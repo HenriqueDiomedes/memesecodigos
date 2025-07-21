@@ -33,7 +33,7 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
-          //app.views.main.router.navigate('/detalhes/');
+          //app.views.main.router.navigate('/carrinho/');
           $.getScript('js/index.js');
 
           var swiper = new Swiper(".mySwiper", {
@@ -187,6 +187,7 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
+          $.getScript('js/carrinho.js');
         },
         pageBeforeRemove: function (event, page) {
           // fazer algo antes da página ser removida do DOM
@@ -198,7 +199,7 @@ var app = new Framework7({
 });
 
 //Para testes direto no navegador
-var mainView = app.views.create('.view-main', { url: '/index/' });
+//var mainView = app.views.create('.view-main', { url: '/index/' });
 
 //EVENTO PARA SABER O ITEM DO MENU ATUAL
 app.on('routeChange', function (route) {

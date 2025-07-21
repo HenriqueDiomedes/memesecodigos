@@ -55,5 +55,5 @@ setTimeout(() => {
     var carrinho = JSON.parse(localStorage.getItem('carrinho'));
 
     //ALIMENTAR O CONTADOR DA SACOLA
-    $('.btn-cart').attr('data-count', carrinho.length);
+    $('.btn-cart').attr('data-count', carrinho.length) || [];
 },300);
